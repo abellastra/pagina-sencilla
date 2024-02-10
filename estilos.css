@@ -1,0 +1,247 @@
+@font-face {
+    font-family:cursivea;
+    src: url(BaskervilleMTStd-Italic.otf);
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+}
+body{
+    font-family: cursivea;
+    padding-top: 105px;
+}
+.logo{
+width: 99px;
+margin: 0 2%;
+ 
+}
+.fondolocal{
+    width: 100%;
+    margin: -8% 0 1% 0;
+   
+   
+} 
+.header{
+    background-color: rgb(255, 222, 227);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    
+}    
+.nav{
+    display: flex;
+     justify-content: space-between; 
+ max-width: 992px;
+ margin: 0 auto;
+ 
+}
+.nav ul{
+    display: flex;
+    margin-right: 40px;
+   
+}
+.nav ul li{
+    width: max-content;
+}
+.nav ul li a{
+    color: rgb(216, 164, 100);
+    font-size: 21px;
+    margin: 0 10px;
+    line-height: 100px;
+    /* text-transform: uppercase; */
+    /* width: max-content; es para q cuando tenes dos palabras y achicas la ventana no pase para abajo la ultima palabra  */
+    width: max-content;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+.nav ul li a:hover{
+    background-color: rgb(247, 201, 209);
+    transition: 0.5S;
+
+}
+.nav-hambur{
+color: rgb(216, 164, 100);
+background: none;
+border: none;
+font-size:35px;
+padding: 0 20px;
+line-height: 0px;
+display: none;
+}
+.txto{
+    
+ padding: 0px 27px 0;
+}
+
+/* sobr nosotros */
+.contndor{
+    display: flex;
+}
+.video{
+    /* padding: 30px; */
+    width: 22%;
+    margin: 0 20px 0 125px;
+    /* display: flex; */
+}
+
+.sobretodo{
+    margin: 50px 0;
+    text-align: center;
+}
+.sobreNosotros{
+        color: #d8a46c; 
+    margin: 20px 0 ;
+    display: inline-block;
+    border-radius: 20px;
+    background-color: #ffdee3;
+    width: 150px;
+    border: solid;
+}
+.sobretxto{
+    width: 46%;
+    margin:auto; 
+    font-size: 121%;
+    text-align: center;
+}
+.contacto, .divcontacto{
+    text-align: center;
+}
+.h2contacto{
+    color: #d8a464;
+    margin: 20px;
+    display: inline-block;
+    background-color: #ffdee3;
+    border-radius: 20px;
+    width: 115px;
+    border: solid;
+}
+.mapa{
+    margin: 0 0 20px 0;
+}
+.iconos{
+    margin: 20px;
+}
+ .instagram, .whatsapp{
+    width: 50px;
+    margin: 10px;
+}
+.footer{
+    background-color: pink;
+    color: #e2a864;
+    text-align: center;
+}
+@media(max-width:768px){
+    body{
+        padding-top: 85px ;
+    }
+    
+    .nav ul{
+      
+        margin: 0;
+    }
+    .logo{
+        width: 80px;
+        margin: 0 2%;
+    } 
+    /* .header{
+        background-color: rgb(255, 222, 227);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+         
+    }    */
+
+    .nav ul li a{
+       
+        font-size: 14px;
+        margin: 0 10px;
+        line-height: 80px;
+    }
+    .video{
+        /* padding: 30px; */
+        /* width: 29%;
+        height: 0%; */
+        /* display: flex; */
+        display: none;
+    }
+    .sobr etxto {
+        width: 56%;
+        margin: 0 22% 0;
+        font-size: 101%;
+        text-align: center;
+    }
+  
+}
+@media(max-width:635px){
+.nav-ulvisibl,.nav{
+    left: 100%;
+}
+    .nav-ul{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        background-color: pink;
+        position: fixed;
+        left: 0px;
+        top: 60px;
+        width: 100%;
+        padding: 0%;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+       left: 100%;
+        transition: left 0.5s;
+    }
+    
+    .logo{
+        width: 60px;
+        margin: 0 2%;
+    } 
+    /* .header{
+        background-color: rgb(255, 222, 227);
+        position: fixed;
+        width: 100%;
+        height: 60%;
+        top: 0;
+        left: 0;
+        
+    }     */
+
+    .nav ul li a{
+        line-height: 70px;
+    }
+    .nav ul li a:hover,
+    .item_active{
+        background: none;
+        color: brown;
+    }
+    .nav-hambur{
+        display: block;
+        font-size: 25px;
+
+    }
+    .nav-ul_visibl{
+        left: 0;
+    }
+    .sobretxto {
+        width: 56%;
+        margin: 0 22% 0;
+        font-size: 101%;
+        text-align: center;
+    }
+    .video {
+        /* padding: 30px; */
+        /* width: 30%;
+        margin: 0px 20px 0 35px; */
+        /* display: flex; */
+        display: none;
+    }
+   .mapa2{
+    width: 250px;
+    height: 250px;
+   }
+}
